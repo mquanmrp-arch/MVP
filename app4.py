@@ -3,10 +3,19 @@ import os, json, numpy as np
 import streamlit as st
 import sympy as sp
 import matplotlib.pyplot as plt
+import pkg_resources # para ver versiones instaladas
 from pathlib import Path
 from sklearn.neighbors import NearestNeighbors
 from sentence_transformers import SentenceTransformer
 from dotenv import load_dotenv
+
+# Mostrar versiones de todos los paquetes instalados
+if st.checkbox("Ver versiones instaladas"):
+    packages = sorted([d for d in pkg_resources.working_set], key=lambda x: x.project_name)
+    for p in packages:
+        st.text(f"{p.project_name}=={p.version}")
+
+# fin muestra de recursos
 
 st.set_page_config(page_title="Formulas + IA", layout="centered", page_icon="🧠")
 load_dotenv()
