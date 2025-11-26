@@ -1,0 +1,367 @@
+[
+  {
+    "id": "ia_mse_algebra",
+    "title": "MSE en regresión (||y - Xw||^2)",
+    "tags": [
+      "ia","algebra lineal","lineal","mse","regresion",
+      "metricas","loss","series temporales",
+      "finanzas","energia","biomedicina","automotriz"
+    ],
+    "content": "MSE = (1/n) * sum((y_i - yhat_i)^2). En regresión lineal se expresa como ||y - Xw||^2; minimizarlo guía el descenso de gradiente y favorece convergencia fina, penalizando fuertemente errores grandes.",
+    "source": "kb/ia/mse_regresion"
+  },
+  {
+    "id": "ia_mae_loss",
+    "title": "MAE (Error Absoluto Medio) en modelos de regresión",
+    "tags": [
+      "ia","metricas","loss","regresion","series temporales",
+      "finanzas","energia","biomedicina","automotriz"
+    ],
+    "content": "MAE = (1/n) * sum(|y_i - yhat_i|). Métrica robusta a outliers para regresión y forecasting; muy útil cuando hay ruido/picos porque no sobredimensiona errores grandes como el MSE.",
+    "source": "kb/ia/mae_loss"
+  },
+  {
+    "id": "auto_gradientes_drag",
+    "title": "Optimizacion aerodinamica con gradientes",
+    "tags": [
+      "automotriz",
+      "calculo",
+      "derivada",
+      "aerodinamica"
+    ],
+    "content": "Gradientes del coeficiente de arrastre vs parametros de carroceria guian el descenso para reducir la carga aerodinamica.",
+    "source": "kb/automotriz/aerodinamica_gradientes"
+  },
+  {
+    "id": "auto_vel_acel_derivadas",
+    "title": "Velocidad y aceleracion como derivadas",
+    "tags": [
+      "automotriz",
+      "calculo",
+      "derivada"
+    ],
+    "content": "d(posicion)/dt es velocidad y d(velocidad)/dt es aceleracion; base para control de traccion.",
+    "source": "kb/automotriz/velocidad_aceleracion"
+  },
+  {
+    "id": "auto_frenado_integral",
+    "title": "Distancia de frenado con integrales",
+    "tags": [
+      "automotriz",
+      "integral",
+      "cinematica"
+    ],
+    "content": "La distancia recorrida durante el frenado se estima integrando velocidad en el tiempo con deceleracion variable.",
+    "source": "kb/automotriz/frenado_integral"
+  },
+  {
+    "id": "auto_vibraciones_trigo",
+    "title": "Vibraciones y funciones trigonometricas",
+    "tags": [
+      "automotriz",
+      "trigonometria",
+      "senos",
+      "cosenos"
+    ],
+    "content": "Oscilaciones de componentes modeladas con seno/coseno; ajustar frecuencia natural mejora confort y seguridad.",
+    "source": "kb/automotriz/vibraciones_trigo"
+  },
+  {
+    "id": "auto_consumo_polinomio",
+    "title": "Consumo vs velocidad (polinomios)",
+    "tags": [
+      "automotriz",
+      "polinomio",
+      "optimizacion"
+    ],
+    "content": "Curvas polinomiales ajustan consumo vs velocidad; derivadas hallan velocidades de consumo minimo.",
+    "source": "kb/automotriz/consumo_polinomios"
+  },
+  {
+    "id": "fin_valor_presente",
+    "title": "Valor presente continuo (exponenciales)",
+    "tags": [
+      "finanzas",
+      "exponencial",
+      "descuento"
+    ],
+    "content": "El descuento continuo usa e^{-rt} para valorar flujos; derivadas miden sensibilidad a tasas.",
+    "source": "kb/finanzas/valor_presente_continuo"
+  },
+  {
+    "id": "fin_varianza_riesgo",
+    "title": "Riesgo de cartera y varianza",
+    "tags": [
+      "finanzas",
+      "probabilidad",
+      "varianza",
+      "algebra lineal"
+    ],
+    "content": "Varianza y covarianzas determinan riesgo de cartera; algebra lineal combina activos eficientemente.",
+    "source": "kb/finanzas/varianza_cartera"
+  },
+  {
+    "id": "fin_precio_opciones",
+    "title": "Opciones y ecuaciones diferenciales",
+    "tags": [
+      "finanzas",
+      "calculo",
+      "diferenciales",
+      "derivada"
+    ],
+    "content": "Black‑Scholes resuelve PDEs; sensibilidades Delta/Gamma derivan del modelo.",
+    "source": "kb/finanzas/opciones_pde"
+  },
+  {
+    "id": "fin_interes_compuesto",
+    "title": "Interes compuesto exponencial",
+    "tags": [
+      "finanzas",
+      "exponencial",
+      "logaritmos"
+    ],
+    "content": "Interes compuesto se modela con exponenciales; los logs ayudan a estimar tasas equivalentes.",
+    "source": "kb/finanzas/interes_compuesto"
+  },
+  {
+    "id": "fin_fraude_bayes",
+    "title": "Fraude con probabilidad condicional (Bayes)",
+    "tags": [
+      "finanzas",
+      "probabilidad",
+      "bayes",
+      "ia"
+    ],
+    "content": "P(Fraude|Evidencia) se calcula con Bayes combinando prior y verosimilitudes de senales.",
+    "source": "kb/finanzas/fraude_bayes"
+  },
+  {
+    "id": "ia_mse_algebra",
+    "title": "MSE y algebra lineal en regresion",
+    "tags": [
+      "algebra lineal",
+      "ia",
+      "lineal",
+      "mse",
+      "regresion"
+    ],
+    "content": "MSE: ||y - Xw||^2; derivadas dirigen el gradiente para minimizar el error.",
+    "source": "kb/ia/mse_regresion"
+  },
+  {
+    "id": "ia_softmax_prob",
+    "title": "Softmax y probabilidad",
+    "tags": [
+      "activacion",
+      "exponencial",
+      "ia",
+      "probabilidad",
+      "softmax"
+    ],
+    "content": "Softmax convierte logits en probabilidades; su derivada define el gradiente del loss.",
+    "source": "kb/ia/softmax_prob"
+  },
+  {
+    "id": "ia_descenso_gradiente",
+    "title": "Descenso de gradiente",
+    "tags": [
+      "ia",
+      "calculo",
+      "derivada",
+      "optimizacion"
+    ],
+    "content": "Se ajustan parametros en direccion opuesta al gradiente; la tasa de aprendizaje controla convergencia.",
+    "source": "kb/ia/descenso_gradiente"
+  },
+  {
+    "id": "ia_bayes_clasificacion",
+    "title": "Bayes en clasificacion",
+    "tags": [
+      "ia",
+      "probabilidad",
+      "bayes"
+    ],
+    "content": "Clasificadores bayesianos estiman posterior para decidir clases; Naive Bayes asume independencia.",
+    "source": "kb/ia/bayes_clasificacion"
+  },
+  {
+    "id": "ia_backprop_algebra",
+    "title": "Backpropagation y derivadas",
+    "tags": [
+      "ia",
+      "calculo",
+      "derivada",
+      "redes neuronales"
+    ],
+    "content": "La regla de la cadena propaga gradientes capa a capa; algebra lineal gestiona tensores de pesos.",
+    "source": "kb/ia/backpropagation"
+  },
+  {
+    "id": "en_potencia_integral",
+    "title": "Energia como integral de potencia",
+    "tags": [
+      "energia",
+      "integral",
+      "fisica"
+    ],
+    "content": "Energia consumida = integral de la potencia en el tiempo; util en facturacion y control.",
+    "source": "kb/energia/energia_integral_potencia"
+  },
+  {
+    "id": "en_rendimiento_paneles",
+    "title": "Rendimiento de paneles (no lineal)",
+    "tags": [
+      "energia",
+      "optimizacion",
+      "no lineal"
+    ],
+    "content": "Curvas no lineales relacionan irradiancia, temperatura y potencia; derivadas ayudan a MPPT.",
+    "source": "kb/energia/paneles_no_lineal"
+  },
+  {
+    "id": "en_armonicos_trigo",
+    "title": "Armonicos y trigonometria en redes",
+    "tags": [
+      "energia",
+      "trigonometria",
+      "senos",
+      "cosenos"
+    ],
+    "content": "Series trigonometricas analizan armonicos para calidad de energia; mitigacion con filtros.",
+    "source": "kb/energia/armonicos_trigo"
+  },
+  {
+    "id": "en_termica_exponencial",
+    "title": "Enfriamiento/calefaccion exponencial",
+    "tags": [
+      "energia",
+      "exponencial",
+      "transferencia_calor"
+    ],
+    "content": "Procesos termicos transitorios siguen leyes exponenciales; parametros por minimos cuadrados.",
+    "source": "kb/energia/termica_exponencial"
+  },
+  {
+    "id": "en_redes_flujo",
+    "title": "Balances de flujo y algebra lineal",
+    "tags": [
+      "energia",
+      "algebra lineal",
+      "optimizacion"
+    ],
+    "content": "Balances en redes (electricas/flujo) se resuelven con sistemas lineales y restricciones.",
+    "source": "kb/energia/redes_flujo"
+  },
+  {
+    "id": "bio_cinetica_farmacos",
+    "title": "Cinetica de farmacos (exponenciales)",
+    "tags": [
+      "biomedicina",
+      "exponencial",
+      "diferenciales"
+    ],
+    "content": "Modelos de compartimentos usan exponenciales para absorcion/eliminacion; ajuste de parametros por curvas.",
+    "source": "kb/biomedicina/cinetica_farmacos"
+  },
+  {
+    "id": "bio_ecg_trigo",
+    "title": "Senales ECG y trigonometria",
+    "tags": [
+      "biomedicina",
+      "trigonometria",
+      "senales"
+    ],
+    "content": "El analisis espectral usa seno/coseno para estudiar ritmos y detectar arritmias.",
+    "source": "kb/biomedicina/ecg_trigo"
+  },
+  {
+    "id": "bio_dosis_integral",
+    "title": "Dosis acumulada (integrales)",
+    "tags": [
+      "biomedicina",
+      "integral",
+      "salud"
+    ],
+    "content": "La dosis total de un farmaco se calcula integrando concentracion en sangre a lo largo del tiempo.",
+    "source": "kb/biomedicina/dosis_integral"
+  },
+  {
+    "id": "bio_cres_prolif",
+    "title": "Crecimiento celular (exponencial/log)",
+    "tags": [
+      "biomedicina",
+      "exponencial",
+      "logaritmos"
+    ],
+    "content": "Crecimiento poblacional inicial es exponencial; los logaritmos linealizan para estimar tasas.",
+    "source": "kb/biomedicina/crecimiento_exponencial"
+  },
+  {
+    "id": "bio_imagen_algebra",
+    "title": "Reconstruccion de imagenes (algebra)",
+    "tags": [
+      "biomedicina",
+      "algebra lineal",
+      "matrices"
+    ],
+    "content": "Tomografia/MRI resuelven sistemas lineales grandes; regularizacion estabiliza la inversion.",
+    "source": "kb/biomedicina/imagen_algebra"
+  },
+  {
+    "id": "ia_sigmoide_activacion",
+    "title": "Función sigmoide en redes neuronales",
+    "tags": [
+      "ia",
+      "exponencial",
+      "activacion"
+    ],
+    "content": "La función 1/(1+exp(-x)) se usa como activación en modelos de clasificación binaria; su derivada controla el gradiente y la saturación.",
+    "source": "kb/ia/sigmoide_activacion"
+  },
+  {
+    "id": "ia_log_loss",
+    "title": "Log-loss (entropía cruzada) para clasificación",
+    "tags": [
+      "ia",
+      "logaritmos",
+      "probabilidad"
+    ],
+    "content": "La pérdida -y*log(p)-(1-y)*log(1-p) mide el error en predicciones probabilísticas y se optimiza con descenso de gradiente.",
+    "source": "kb/ia/log_loss"
+  },
+  {
+    "id": "ia_datos_periodicos",
+    "title": "Señales periódicas y seno/coseno en IA",
+    "tags": [
+      "ia",
+      "trigonometria",
+      "senos",
+      "cosenos"
+    ],
+    "content": "Funciones seno y coseno representan patrones cíclicos en series temporales y sirven de base para embeddings posicionales.",
+    "source": "kb/ia/datos_periodicos"
+  },
+  {
+    "id": "ia_funciones_racionales",
+    "title": "Funciones racionales y normalización",
+    "tags": [
+      "ia",
+      "racional",
+      "normalizacion"
+    ],
+    "content": "Expresiones como 1/(1+x) se emplean para escalar/limitar entradas y estabilizar entrenamientos en modelos simples.",
+    "source": "kb/ia/funciones_racionales"
+  },
+  {
+    "id": "bio_senales_amortiguadas",
+    "title": "Señales amortiguadas (exp(-x)*sin(x)) en biomedicina",
+    "tags": [
+      "biomedicina",
+      "exponencial",
+      "trigonometria",
+      "senales"
+    ],
+    "content": "Modelos de ondas fisiológicas amortiguadas, como componentes de ECG o respiración, se expresan como exp(-x)*sin(x).",
+    "source": "kb/biomedicina/senales_amortiguadas"
+  }
+]
